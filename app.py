@@ -17,7 +17,7 @@ def extract_text_from_pdf(pdf_file):
         text = ""
         for page_num in range(len(pdf_reader.pages)):
             page = pdf_reader.pages[page_num]
-            text += page.extract_Text()
+            text += page.extract_text()
         return text
 
 # Function to convert text to speech
