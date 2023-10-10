@@ -16,7 +16,7 @@ def extract_text_from_pdf(pdf_file):
         pdf_reader = PyPDF2.PdfReader(pdf_file)
         text = ""
         for page_num in range(len(pdf_reader.pages)):
-            text += pdf_reader.getPage(page_num).extractText()
+            text += pdf_reader.pages[page_number].extractText()
         return text
 
 # Function to convert text to speech
